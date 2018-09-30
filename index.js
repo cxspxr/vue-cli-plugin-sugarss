@@ -1,6 +1,6 @@
 module.exports = function(API) {
   return API.configureWebpack(function() {
-    {
+    return {
       module: {
         rules: [
           {
