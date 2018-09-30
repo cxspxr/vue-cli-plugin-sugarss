@@ -1,0 +1,29 @@
+{
+  "name": "vue-cli-plugin-sugarss",
+  "version": "0.1.0",
+  "description": "SugarSS support for @vue/cli projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cxsper/vue-cli-plugin-sugarss.git"
+  },
+  "keywords": [
+    "sugarss",
+    "postcss",
+    "stylus",
+    "sass",
+    "linter",
+    "vue-cli",
+    "vue",
+    "vuejs"
+  ],
+  "author": "ilovewindows96@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cxsper/vue-cli-plugin-sugarss/issues"
+  },
+  "homepage": "https://github.com/cxsper/vue-cli-plugin-sugarss#readme"
+}
