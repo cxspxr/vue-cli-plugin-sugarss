@@ -12,7 +12,7 @@ vue add sugarss
 
 ## Usage
 
-You can just go with `lang=sass`, `lang=stylus` and `lang=sss` as it is shown below. Make sure that you have your `sass-loader` / `stylus-loader` installed.
+You can just go with `lang=sass`, `lang=stylus` and `lang=sss` as it is shown below. It is not required to install `node-sass`, `sass-loader`, `stylus` and `stylus-loader` since the plugin includes these loaders.
 
 ```html
 <style lang="sass">
