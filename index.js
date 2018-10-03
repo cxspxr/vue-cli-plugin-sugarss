@@ -4,7 +4,7 @@ module.exports = function(API) {
       module: {
         rules: [
           {
-            test: /\.(styl|sss|stylus)$/,
+            test: /\.(styl|sss|stylus|sass)$/,    
             loader: 'postcss-loader?parser=sugarss'
           }
         ]
