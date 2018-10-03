@@ -1,6 +1,3 @@
-const stylus = require('stylus-loader');
-const sass = require('sass-loader');
-
 module.exports = function(API) {
   return API.configureWebpack(function() {
     return {
