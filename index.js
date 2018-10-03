@@ -4,7 +4,15 @@ module.exports = function(API) {
       module: {
         rules: [
           {
-            test: /\.(styl|sss|stylus|sass)$/,    
+            test: /\.(sss|sass|scss)$/,
+            loader: 'sass-loader'
+          },
+          {
+            test: /\.(sss|stylus|styl)$/,
+            loader: 'stylus-loader'
+          },
+          {
+            test: /\.(styl|sss|stylus|sass)$/,
             loader: 'postcss-loader?parser=sugarss'
           }
         ]

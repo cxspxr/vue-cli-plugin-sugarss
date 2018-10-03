@@ -12,7 +12,7 @@ vue add sugarss
 
 ## Usage
 
-You can either modify your `sass-loader` or `stylus-loader` to load `lang=sss`; or you can just go with `lang=sass` and `lang=stylus` as it is shown below.
+You can just go with `lang=sass`, `lang=stylus` and `lang=sss` as it is shown below. Make sure that you have your `sass-loader` / `stylus-loader` installed.
 
 ```html
 <style lang="sass">
@@ -28,6 +28,15 @@ body
 
 body
   color: white
+
+</style>
+```
+
+```html
+<style lang="sss">
+
+body
+  color: red
 
 </style>
 ```
