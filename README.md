@@ -10,29 +10,9 @@ According to [this](https://cli.vuejs.org/guide/plugins-and-presets.html#install
 vue add sugarss
 ```
 
- It is not required to install `node-sass`, `sass-loader`, `stylus` and `stylus-loader` since the plugin includes these loaders.
-
 ## Usage
 
-You can just go with `lang=sass`, `lang=stylus` and `lang=sss` as it is shown below.
-
-```html
-<style lang="sass">
-
-body
-  color: black
-
-</style>
-```
-
-```html
-<style lang="stylus">
-
-body
-  color: white
-
-</style>
-```
+You can just go with `file.sss` and/or `style[lang=sss]` as it is shown below.
 
 ```html
 <style lang="sss">
