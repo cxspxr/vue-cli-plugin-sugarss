@@ -22,3 +22,39 @@ body
 
 </style>
 ```
+
+## PostCSS plugins
+
+This plugin use it's custom webpack rule named `sss`. So in order to add some options (including plugins) to `postcss-loader` (or `vue-style-loader`, or `css-loader`) you need chain existing webpack rule in `vue.config.js` like this:
+
+```bash
+$ npm i -D <plugin>
+$ npm i -D <another-plugin>
+```
+
+```javascript
+// vue.config.js
+module.exports = {
+  chainWebpack: config => {
+    config.module.rule('sss')
+      .use('postcss-loader')
+        .loader('postcss-loader')
+        .tap(opts => {
+          opts.plugins.push(
+            // in some order you want
+            require('<plugin>'),
+            require('<another plugin>')
+          );
+
+          // You can change or set any property
+          // opts.parser = 'sugarss';
+
+          return opts;
+        });
+  }
+}
+```
+
+### `postcss-nested` & `postcss-nested-props`
+
+You should `require('post-css-nested-props')` before `require('postcss-nested')` when pushing them to plugins.
