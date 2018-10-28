@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-sugarss",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "SugarSS support for @vue/cli projects",
   "main": "index.js",
   "scripts": {

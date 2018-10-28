@@ -8,7 +8,8 @@ module.exports = function(API) {
 
     sugarRule.use('postcss-loader').loader('postcss-loader').tap(options => {
       return {
-        parser: 'sugarss'
+        parser: 'sugarss',
+        plugins: []
       }
     });
   });
