@@ -2,7 +2,7 @@ module.exports = function(API) {
   return API.chainWebpack(config => {
     const sugarRule = config.module.rule('sss').test(/\.sss$/);
 
-    ['style-loader', 'css-loader'].forEach((loader) => {
+    ['vue-style-loader', 'css-loader'].forEach((loader) => {
       sugarRule.use(loader).loader(loader).tap(options => { return {}; });
     });
 
