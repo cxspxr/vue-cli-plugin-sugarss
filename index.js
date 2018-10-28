@@ -1,14 +1,15 @@
 module.exports = function(API) {
-  return API.configureWebpack(function() {
-    return {
-      module: {
-        rules: [
-          {
-            test: /\.(sss)$/,
-            loader: 'style-loader!css-loader!postcss-loader?parser=sugarss'
-          }
-        ]
+  return API.chainWebpack(() => {
+    const sugarRule = config.module.rule('sss').test(/\.sss$/);
+
+    ['style-loader', 'css-loader'].forEach((loader) => {
+      sugarRule.use(loader).loader(loader).tap(options => { return {}; });
+    });
+
+    sugarRule.use('postcss-loader').loader('postcss-loader').tap(options => {
+      return {
+        parser: 'sugarss'
       }
-    }
+    });
   });
 };
