@@ -1,5 +1,5 @@
 module.exports = function(API) {
-  return API.chainWebpack(() => {
+  return API.chainWebpack(config => {
     const sugarRule = config.module.rule('sss').test(/\.sss$/);
 
     ['style-loader', 'css-loader'].forEach((loader) => {
